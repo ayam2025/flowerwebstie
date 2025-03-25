@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Aspect Floral</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Lightbox CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="sticky-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light py-3">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/aspect-logo.png" alt="Aspect Floral" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Gallery Header -->
+  <section class="page-header py-5">
+    <div class="container text-center py-5">
+      <h1 class="display-4 fw-bold text-primary mb-4">Our Floral Gallery</h1>
+      <p class="lead">Browse our collection of handcrafted floral arrangements created with love and attention to detail.</p>
+    </div>
+  </section>
+
+  <!-- Gallery Categories -->
+  <section class="gallery-categories py-5">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <p class="lead">Filter by category to find the perfect arrangement for your occasion.</p>
+          <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
+            <button class="btn btn-outline-primary active" data-filter="all">All</button>
+            <button class="btn btn-outline-primary" data-filter="seasonal">Seasonal</button>
+            <button class="btn btn-outline-primary" data-filter="wedding">Wedding</button>
+            <button class="btn btn-outline-primary" data-filter="birthday">Birthday</button>
+            <button class="btn btn-outline-primary" data-filter="sympathy">Sympathy</button>
+            <button class="btn btn-outline-primary" data-filter="custom">Custom</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="gallery-grid pb-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Gallery Item 1 -->
+        <div class="col-lg-4 col-md-6 gallery-item" data-category="seasonal">
+          <a href="images/arrangement-1.jpg" data-lightbox="gallery" data-title="Spring Bloom Arrangement">
+            <div class="card gallery-card h-100 border-0 shadow-sm">
+              <img src="images/arrangement-1.jpg" class="card-img-top" alt="Spring Bloom Arrangement">
+              <div class="card-body">
+                <h5 class="card-title">Spring Bloom</h5>
+                <p class="card-text text-muted">Seasonal Collection</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Gallery Item 2 -->
+        <div class="col-lg-4 col-md-6 gallery-item" data-category="wedding">
+          <a href="images/arrangement-2.jpg" data-lightbox="gallery" data-title="Elegant White Wedding Bouquet">
+            <div class="card gallery-card h-100 border-0 shadow-sm">
+              <img src="images/arrangement-2.jpg" class="card-img-top" alt="Elegant White Wedding Bouquet">
+              <div class="card-body">
+                <h5 class="card-title">Elegant White</h5>
+                <p class="card-text text-muted">Wedding Collection</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Gallery Item 3 -->
+        <div class="col-lg-4 col-md-6 gallery-item" data-category="birthday">
+          <a href="images/arrangement-3.jpg" data-lightbox="gallery" data-title="Vibrant Birthday Celebration Bouquet">
+            <div class="card gallery-card h-100 border-0 shadow-sm">
+              <img src="images/arrangement-3.jpg" class="card-img-top" alt="Vibrant Birthday Celebration Bouquet">
+              <div class="card-body">
+                <h5 class="card-title">Vibrant Celebration</h5>
+                <p class="card-text text-muted">Birthday Collection</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Gallery Item 4 -->
+        <div class="col-lg-4 col-md-6 gallery-item" data-category="sympathy">
+          <a href="images/arrangement-4.jpg" data-lightbox="gallery" data-title="Serene Sympathy Arrangement">
+            <div class="card gallery-card h-100 border-0 shadow-sm">
+              <img src="images/arrangement-4.jpg" class="card-img-top" alt="Serene Sympathy Arrangement">
+              <div class="card-body">
+                <h5 class="card-title">Serene Tribute</h5>
+                <p class="card-text text-muted">Sympathy Collection</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Gallery Item 5 -->
+        <div class="col-lg-4 col-md-6 gallery-item" data-category="custom">
+          <a href="images/arrangement-5.jpg" data-lightbox="gallery" data-title="Custom Exotic Arrangement">
+            <div class="card gallery-card h-100 border-0 shadow-sm">
+              <img src="images/arrangement-5.jpg" class="card-img-top" alt="Custom Exotic Arrangement">
+              <div class="card-body">
+                <h5 class="card-title">Exotic Blend</h5>
+                <p class="card-text text-muted">Custom Collection</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Gallery Item 6 -->
+        <div class="col-lg-4 col-md-6 gallery-item" data-category="seasonal">
+          <a href="images/arrangement-6.jpg" data-lightbox="gallery" data-title="Autumn Harvest Arrangement">
+            <div class="card gallery-card h-100 border-0 shadow-sm">
+              <img src="images/arrangement-6.jpg" class="card-img-top" alt="Autumn Harvest Arrangement">
+              <div class="card-body">
+                <h5 class="card-title">Autumn Harvest</h5>
+                <p class="card-text text-muted">Seasonal Collection</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Gallery Item 7 -->
+        <div class="col-lg-4 col-md-6 gallery-item" data-category="wedding">
+          <a href="images/featured-arrangement.jpg" data-lightbox="gallery" data-title="Rustic Wedding Centerpiece">
+            <div class="card gallery-card h-100 border-0 shadow-sm">
+              <img src="images/featured-arrangement.jpg" class="card-img-top" alt="Rustic Wedding Centerpiece">
+              <div class="card-body">
+                <h5 class="card-title">Rustic Centerpiece</h5>
+                <p class="card-text text-muted">Wedding Collection</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Gallery Item 8 -->
+        <div class="col-lg-4 col-md-6 gallery-item" data-category="birthday">
+          <a href="images/arrangement-1.jpg" data-lightbox="gallery" data-title="Colorful Birthday Surprise">
+            <div class="card gallery-card h-100 border-0 shadow-sm">
+              <img src="images/arrangement-1.jpg" class="card-img-top" alt="Colorful Birthday Surprise">
+              <div class="card-body">
+                <h5 class="card-title">Colorful Surprise</h5>
+                <p class="card-text text-muted">Birthday Collection</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Gallery Item 9 -->
+        <div class="col-lg-4 col-md-6 gallery-item" data-category="custom">
+          <a href="images/arrangement-3.jpg" data-lightbox="gallery" data-title="Custom Modern Arrangement">
+            <div class="card gallery-card h-100 border-0 shadow-sm">
+              <img src="images/arrangement-3.jpg" class="card-img-top" alt="Custom Modern Arrangement">
+              <div class="card-body">
+                <h5 class="card-title">Modern Elegance</h5>
+                <p class="card-text text-muted">Custom Collection</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-4">Shop</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-white-50">All Arrangements</a></li>
+            <li><a href="#" class="text-decoration-none text-white-50">Seasonal Specials</a></li>
+            <li><a href="#" class="text-decoration-none text-white-50">Gift Baskets</a></li>
+            <li><a href="#" class="text-decoration-none text-white-50">Plants</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-4">About Us</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-white-50">Our Story</a></li>
+            <li><a href="#" class="text-decoration-none text-white-50">Sustainability</a></li>
+            <li><a href="#" class="text-decoration-none text-white-50">Testimonials</a></li>
+            <li><a href="#" class="text-decoration-none text-white-50">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-4">Customer Care</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-white-50">Contact Us</a></li>
+            <li><a href="#" class="text-decoration-none text-white-50">FAQs</a></li>
+            <li><a href="#" class="text-decoration-none text-white-50">Shipping Policy</a></li>
+            <li><a href="#" class="text-decoration-none text-white-50">Returns & Refunds</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-4">Connect With Us</h5>
+          <div class="d-flex gap-3 mb-4">
+            <a href="#" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-pinterest fa-lg"></i></a>
+          </div>
+          <p class="text-white-50">Subscribe to our newsletter for exclusive offers and floral inspiration.</p>
+          <form>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Your email" aria-label="Email" aria-describedby="subscribe-btn">
+              <button class="btn btn-primary" type="button" id="subscribe-btn">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr class="my-4 bg-secondary">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0 text-white-50">&copy; 2025 Aspect Floral. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="text-decoration-none text-white-50 me-3">Privacy Policy</a>
+          <a href="#" class="text-decoration-none text-white-50 me-3">Terms of Service</a>
+          <a href="#" class="text-decoration-none text-white-50">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery (required for Lightbox) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Lightbox JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/gallery.js"></script>
+</body>
+</html>
+
